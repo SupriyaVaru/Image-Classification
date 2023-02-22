@@ -71,9 +71,10 @@ Remember that your README should:
    What are the results/insights did you get by profiling/debugging your model?
    
    Debugging results:
+   
    ![image](https://user-images.githubusercontent.com/103468158/220751666-ecce4050-af56-446a-8d81-b186f0207a55.png)
  
-   1)"PoorWeightInitialization: Error" has been observed in logs. This can be fixed by using weight intialization techniques like Xavier/Glorot Initialization, He          Initialization, Uniform Initialization etc.,
+   1)"PoorWeightInitialization: Error" has been observed in logs. This can be fixed by using weight intialization techniques like Xavier/Glorot Initialization, He          Initialization, Uniform Initialization etc.,           
    2)From the output it can be seen that training loss decreases with increase in steps whereas validation loss is almost constant and very low compared with training      loss. This could be sign of overfitting. We can use regularization techniques to avoid this.
    
    Profiling results:
