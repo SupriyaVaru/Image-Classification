@@ -27,28 +27,35 @@ ResNet50 is a popular pre-trained model for image classification because it has 
 
 I have choosed ResNet50 pretrained model to apply transfer learning because pre-trained ResNet50 model is capable of extracting high-level features from images, which can be fine-tuned for our specific image classification task. This makes ResNet50 a good choice for transfer learning, where we can leverage the pre-trained weights of the model to achieve good performance on our image classification task with a relatively small amount of training data.
 
-#Hyperparameters and their ranges:
 
-Below are the hyperparameters that I have choosen to search
+
+
+Remember that your README should:
+- Include a screenshot of completed training jobs
+-
+![image](https://user-images.githubusercontent.com/103468158/220745575-d204c103-438d-413a-a1df-7ea02dbb9220.png)
+
+![image](https://user-images.githubusercontent.com/103468158/220746049-d6c7d85a-d8e2-4044-b58f-d85ff51108fe.png)
+
+- Logs metrics during the training process
+Log metrics of 4 Hyperparameter tuning jobs
+![image](https://user-images.githubusercontent.com/103468158/220747837-2d150dc2-2d65-4ad7-a9db-90025d992a03.png)
+![image](https://user-images.githubusercontent.com/103468158/220748206-92b2de9a-cf3b-4ffe-94ae-53d5322b079e.png)
+![image](https://user-images.githubusercontent.com/103468158/220748450-955c88c3-05b1-424b-94be-2926202e6876.png)
+![image](https://user-images.githubusercontent.com/103468158/220748748-dfc038e8-30a9-4299-b857-51fd0a58e37c.png)
+
+- Tune at least two hyperparameters
+
+Tuned three Hyperparameters
+Below are the hyperparameters and their ranges that I have choosen to search
 
 "learning_rate": (0.001, 0.1)
 "batch_size": (32, 64, 128, 256, 512)
 "num_epochs": (2, 4)
 
-
-Remember that your README should:
-- Include a screenshot of completed training jobs
-![image](https://user-images.githubusercontent.com/103468158/220745575-d204c103-438d-413a-a1df-7ea02dbb9220.png)
-![image](https://user-images.githubusercontent.com/103468158/220746049-d6c7d85a-d8e2-4044-b58f-d85ff51108fe.png)
-![image](https://user-images.githubusercontent.com/103468158/220746202-72e9b733-6805-4c84-a078-800cdeb4d5b1.png)
-
-- Logs metrics during the training process
-Log metrics of Best job of Hyperparameter tuning jobs
-![image](https://user-images.githubusercontent.com/103468158/220746532-6b44da18-419a-4fdd-ac2d-37cbbc58fdf4.png)
-
-- Tune at least two hyperparameters
 - Retrieve the best best hyperparameters from all your training jobs
-
+-
+![image](https://user-images.githubusercontent.com/103468158/220746202-72e9b733-6805-4c84-a078-800cdeb4d5b1.png)
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
